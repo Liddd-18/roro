@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fdf8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 600px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notice {
+    background: #fff0f3;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .messages {
+    margin: 20px 0;
+  }
+  
+  .messages button {
+    background: #fef6e4;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .messages button:hover {
+    background: #fde2cf;
+  }
+  
+  .image-wrapper img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 10px 0;
+  }
+  #fireworkContainer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .flame {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 30px;
+    background: radial-gradient(circle, rgba(255, 165, 0, 1) 20%, rgba(255, 69, 0, 1) 70%);
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: rise 7s linear forwards;
+  }
+  
+  @keyframes rise {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-300px);
+      opacity: 0;
+    }
+  }
+  
+  .song {
+    margin-top: 20px;
+    padding: 15px;
+    background: #1db954;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .song img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  .song .details {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .song .details p {
+    margin: 0;
+  }
+  
+  .song .details .title {
+    font-weight: bold;
+  }
+  
+  .song .controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .song .controls button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .song .controls button:hover {
+    opacity: 0.8;
+  }
+  
