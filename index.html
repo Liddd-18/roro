@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Virtual Hug</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <div class="notice">
-      💌 NOTICE: Happy Birthday Cantikkk!
-    </div>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Hug</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="notice">💌 NOTICE: Happy Birthday Cantikkk!</div>
 
-    <div class="image-wrapper">
-      <img src="c:\Users\ASUS TUF GAMING A15\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\D132EA3FB9A791FD13451EB8EA57104A\WhatsApp Image 2025-01-30 at 14.40.45_007e8d78.jpg" alt="Your image here">
-    </div>
-
-    <div class="messages">
-      <p><strong>Beberapa pesan untuk kamu:</strong></p>
-      <button onclick="showMessage('Ini bukan akhir, kamu hanya perlu coba lagi. Perlahan tapi pasti.')">Ketika kamu merasa putus asa</button>
-      <button onclick="showMessage('Istirahat dulu, kamu sudah berjuang keras. Nanti lanjut lagi..')">Ketika kamu merasa lelah</button>
-      <button onclick="showMessage('Rasanya berat, aku tahu. Tapi waktu akan membantu kamu sembuh.')">Ketika kamu merasa kehilangan</button>
-      <button onclick="showMessage('Tenang, semua akan baik-baik saja. Fokus pada apa yang bisa kamu lakukan sekarang.')">Ketika kamu merasa cemas</button>
-    </div>
-
-    <p id="message" style="font-style: italic; color: #555;"></p>
-
-    <div class="song">
-      <img src="c:\Users\ASUS TUF GAMING A15\Downloads\download.jpeg" alt="Album cover">
-      <div class="details">
-        <p class="title">Sempurna</p>
-        <p class="artist">Andra & The Backbone</p>
+      <div class="image-wrapper">
+        <img src="foto1.jpg" alt="Your image here" />
       </div>
-      <div class="controls">
-        <button id="prev"><span>&#9664;</span></button>
-        <button id="playPause"><span>&#9654;</span></button>
-        <button id="next"><span>&#9654;&#9654;</span></button>
+
+      <div class="messages">
+        <p><strong>Beberapa pesan untuk kamu:</strong></p>
+        <button
+          onclick="showMessage('Ini bukan akhir, kamu hanya perlu coba lagi. Perlahan tapi pasti.')"
+        >
+          Ketika kamu merasa putus asa
+        </button>
+        <button
+          onclick="showMessage('Istirahat dulu, kamu sudah berjuang keras. Nanti lanjut lagi..')"
+        >
+          Ketika kamu merasa lelah
+        </button>
+        <button
+          onclick="showMessage('Rasanya berat, aku tahu. Tapi waktu akan membantu kamu sembuh.')"
+        >
+          Ketika kamu merasa kehilangan
+        </button>
+        <button
+          onclick="showMessage('Tenang, semua akan baik-baik saja. Fokus pada apa yang bisa kamu lakukan sekarang.')"
+        >
+          Ketika kamu merasa cemas
+        </button>
+      </div>
+
+      <p id="message" style="font-style: italic; color: #555"></p>
+
+      <div class="song">
+        <img src="download.jpeg" alt="Album cover" />
+        <div class="details">
+          <p class="title">Sempurna</p>
+          <p class="artist">Andra & The Backbone</p>
+        </div>
+        <div class="controls">
+          <button id="prev"><span>&#9664;</span></button>
+          <button id="playPause"><span>&#9654;</span></button>
+          <button id="next"><span>&#9654;&#9654;</span></button>
+        </div>
       </div>
     </div>
-  </div>
-  <button id="fireworkButton">🎆 Klik Disini 🎆</button>
-        <div id="fireworkContainer"></div>
+    <button id="fireworkButton">🎆 Klik Disini 🎆</button>
+    <div id="fireworkContainer"></div>
 
-  <audio id="audioPlayer" src="your-song-file.mp3"></audio>
-  <script src="script.js"></script>
-</body>
+    <audio id="audioPlayer" src="your-song-file.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
 </html>
